@@ -1,0 +1,81 @@
+@font-face 
+{
+	font-family: 'Oswald';
+	src: url("font/Oswald.ttf")format("opentype");
+}
+*
+{
+	margin:0;
+}
+body
+{
+	font-family: 'Arial';
+	line-height: 1.5;
+}
+div::after
+{
+	content: "";
+	clear: both;
+	display: table;
+}
+a
+{
+	text-decoration: none;
+	color: black;
+}
+button
+{
+	outline: none;
+}
+input:focus 
+{
+ 	outline: none;
+ 	background-color: var(--background-color-mid);
+}
+select:focus 
+{
+ 	outline: none;
+ 	background-color: var(--background-color-mid);
+}
+.center
+{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+.flex-parent
+{
+	display: flex;
+  	align-items: center; 
+  	flex-wrap: wrap;
+}
+.flex-child
+{
+	flex-grow: 1;
+}
+.container
+{
+	width: 80%;
+	max-width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.textContainer
+{
+	max-width: 760px;
+}
+/*input
+{
+	outline: none;
+}
+button:focus
+{
+	outline:none;
+}*/
+@media (max-width:500px)
+{
+	.container
+	{
+		width: 90%;
+	}
+}
