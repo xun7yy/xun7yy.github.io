@@ -3,14 +3,12 @@ angular.module('shop', []).controller('list', function($scope) {
 	vm.productType;
 	vm.searchedContent;
 	vm.sortType;
-	// vm.selectedCategoryNumber = 0;
 	vm.ifChecked = true;
 	vm.categoryArray =[];
     vm.categoryOptions = data.categoryOptions;
     vm.items = data.items;
     vm.selectedCategoryNumber = vm.categoryOptions.length;
     vm.showSearch = true;
-    // vm.onsearching = false;
     vm.windowSize = 0;
 
    /**
@@ -64,7 +62,12 @@ angular.module('shop', []).controller('list', function($scope) {
     	}
     	vm.selectedCategoryNumber = vm.categoryOptions.length;
     };
-
+    /**
+    * show / hide search bar on smaller screens
+    */
+    vm.showSearch = function() {
+        document.querySelector("#searchBar").classList.toggle("showClass");
+    }
    /**
     * initialize variables
     */
@@ -77,7 +80,5 @@ angular.module('shop', []).controller('list', function($scope) {
 
     vm.init();
 
-    vm.showSearch = function() {
-        document.querySelector("#searchBar").classList.toggle("showClass");
-    }
+    
 });

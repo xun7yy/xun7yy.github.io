@@ -11,6 +11,7 @@ body
 {
 	font-family: 'Arial';
 	line-height: 1.5;
+	min-width: 315px;
 }
 div::after
 {
@@ -30,7 +31,6 @@ button
 input:focus 
 {
  	outline: none;
- 	background-color: var(--background-color-mid);
 }
 select:focus 
 {
@@ -64,10 +64,6 @@ select:focus
 {
 	max-width: 760px;
 }
-
-/*select {
-	-webkit-appearance:none;
-}*/
 @media (max-width:500px)
 {
 	.container

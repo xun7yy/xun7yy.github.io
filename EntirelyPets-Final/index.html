@@ -11,10 +11,8 @@
 	<link rel="stylesheet" href="css/grid.css">
 	<link rel="stylesheet" href="css/style.css">
 	
+	<script src="lib/angular.min.js"></script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
-	<script src="https://kit.fontawesome.com/b03e758b0a.js"></script>
-	
 	<script src="js/data.js"></script>
 	<script src="js/main.js"></script>
 </head>
@@ -38,7 +36,7 @@
 		</div>
 	</header>
 	<main>
-		<div class="topPro">
+		<div class="topPro" id="top">
 			<img src="media/topPro.png" alt="toImg" class="topPro">
 		</div>
 		<div class="container">
@@ -59,7 +57,10 @@
 					<div class="filterContainer">
 						<div class="categoryMenu">
 							<span class="selectedCategoryNumber">
-								{{vm.selectedCategoryNumber}} categories selected &#160;&#160;&#9660;
+								{{vm.selectedCategoryNumber}} categories selected 
+								<span class="down">
+									&#160;&#160;&#9660;
+								</span>
 							</span>
 							<div class="categoryDropDown flex-parent">
 								<div>
@@ -112,6 +113,11 @@
 				</div>
 			</div>
 		</div>
+		<a href="#top">
+		<div class="getTop flex-parent">
+			&#8682;
+		</div>
+		</a>
 	</main>
 </body>
 </html>

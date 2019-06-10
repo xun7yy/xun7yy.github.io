@@ -17,6 +17,7 @@ header
 {
 	height: 58px;
 	width: 100%;
+	min-width: 315px;
 	background-color: var(--main-color);
 	position: fixed;
 	top:0;
@@ -57,7 +58,7 @@ main
 }
 .topPro
 {
-	max-width: 100%;
+	width: 100%;
 	object-fit: cover;
 }
 .filterBar
@@ -183,6 +184,21 @@ select.form-control:not([size]):not([multiple])
 {
 	display: none;
 }
+.getTop
+{
+	background-color: #f3ab1b;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 1;
+	color: var(--background-color-light);
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
 @media (max-width:1000px)
 {
 	.inputBar
@@ -245,6 +261,8 @@ select.form-control:not([size]):not([multiple])
 		width: 100vw;
 		top:58px;
 		left:0;
+		box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+		padding: 15px;
 	}
 	.filter_small_screen
 	{
@@ -330,7 +348,6 @@ select.form-control:not([size]):not([multiple])
 		right: 0;
 		padding-bottom: 15px;
 		font-size: 0.7rem;
-		font-weight: lighter;
 	}
 	.form-control
 	{
@@ -344,11 +361,18 @@ select.form-control:not([size]):not([multiple])
 		text-align: right;
 		font-size: 0.8rem;
 		padding-top: 15px;
-		font-weight: 100;
+		font-weight: 400;
 	}
 	.productList
 	{
 		margin-top: 20px;
+	}
+	.getTop
+	{
+		width: 45px;
+		height: 45px;
+		bottom: 20px;
+		right: 20px;
 	}
 }
 @media (max-width:600px)
@@ -368,7 +392,17 @@ select.form-control:not([size]):not([multiple])
 	}
 	.type
 	{
-		font-size: 0.8rem;
+		font-size: 0.9rem;
+	}
+	.type:first-child
+	{
+		padding-right: 20px;
+		padding-left: 5px;
+	}
+	.type:last-child
+	{
+		margin-left: 10px;
+		padding-left: 20px;
 	}
 	.typeContainer
 	{
@@ -395,6 +429,13 @@ select.form-control:not([size]):not([multiple])
 	{
 		padding:8px 10px;
 	}
+	.getTop
+	{
+		width: 40px;
+		height: 40px;
+		bottom: 15px;
+		right: 5px;
+	}
 }
 @media (max-width:400px)
 {
@@ -410,18 +451,39 @@ select.form-control:not([size]):not([multiple])
 	.sortContainer
 	{
 		border-left: 1px solid var(--border-color);
-		padding-left: 5px;
+		padding-left: 2px;
 	}
 	.filterTag_small_screen
 	{
-		padding:6px 10px;
+		padding:6px 6px;
 	}
 	.selectedCategoryNumber
 	{
-		font-size: 0.6rem;
+		font-size: 0.7rem;
 	}
 	.categoryMenu
 	{
-		padding: 5px 10px;
+		padding: 8px 5px 2px 5px;
+	}
+	.typeContainer
+	{
+		padding: 10px 5px;
+	}
+	.type
+	{
+		font-weight: 400;
+		padding: 0 15px;
+	}
+	.form-control
+	{
+		width: 130px;
+	}
+	.getTop
+	{
+		width: 30px;
+		height: 30px;
+		bottom: 15px;
+		right: 5px;
+		font-size: 1rem;
 	}
 }
