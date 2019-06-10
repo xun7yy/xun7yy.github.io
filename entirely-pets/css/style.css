@@ -1,4 +1,4 @@
-:root 
+:root
 {
   --main-color: #6180b0;
   --background-color-light:#ffffff;
@@ -120,7 +120,7 @@ main
 	color: var(--background-color-light);
 	font-weight: 500;
 }
-select.form-control:not([size]):not([multiple]) 
+select.form-control:not([size]):not([multiple])
 {
 	height: 34px;
 }
@@ -128,7 +128,7 @@ select.form-control:not([size]):not([multiple])
 {
 	border: var(--border-color) solid 1px;
 	background-color: white;
-	font-size: 0.9rem;	
+	font-size: 0.9rem;
 }
 .reset
 {
@@ -354,7 +354,7 @@ select.form-control:not([size]):not([multiple])
 		border: none;
 		background-color: var(--background-color-light);
 		font-size: 0.9rem;
-		font-weight: bold;	
+		font-weight: bold;
 	}
 	.totalProduct_smallscreen
 	{
@@ -437,7 +437,7 @@ select.form-control:not([size]):not([multiple])
 		right: 5px;
 	}
 }
-@media (max-width:400px)
+@media (max-width:410px)
 {
 	.logo
 	{
