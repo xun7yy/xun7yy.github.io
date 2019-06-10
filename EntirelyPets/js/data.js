@@ -77,11 +77,11 @@ var data = {
 		},
 		{
 			id: 7,
-			name: 'JW Pet Cataction',
-			price: 2.49,
-			pic: 'media/dogdrug1.png',
+			name: 'Fussie Cat Tuna',
+			price: 1.99,
+			pic: 'media/catfood1.png',
 			type: 'cat',
-			category: 'Health & Wellness'
+			category: 'Pet Food'
 		},
 		{
 			id: 8,
@@ -101,7 +101,7 @@ var data = {
 		},
 		{
 			id: 10,
-			name: 'JW Pet Cataction',
+			name: ' Doorknob Teaser with Cuz',
 			price: 1.99,
 			pic:'media/cattoy2.png',
 			type:'cat',

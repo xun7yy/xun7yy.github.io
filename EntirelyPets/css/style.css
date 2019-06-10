@@ -57,7 +57,8 @@ main
 }
 .topPro
 {
-	width: 100%;
+	max-width: 100%;
+	object-fit: cover;
 }
 .filterBar
 {
@@ -210,6 +211,10 @@ select.form-control:not([size]):not([multiple])
 }
 @media (max-width:850px)
 {
+	.topPro
+	{
+		height: 150px;
+	}
 	.search_white
 	{
 		display: flex;
@@ -278,7 +283,7 @@ select.form-control:not([size]):not([multiple])
 		position: absolute;
 		width: 100%;
 		left: 0;
-		top: calc(200% + 15px);
+		top: calc(200% + 10px);
 		background-color: var(--main-color);
 		z-index: 1;
 	}
@@ -303,7 +308,7 @@ select.form-control:not([size]):not([multiple])
 	{
 		display: block;
 	}
-	.filterTag_small_screen:hover
+	.filter_small_screen:hover
 	{
 		background-color: var(--main-color);
 		color: var(--background-color-light);
@@ -348,6 +353,10 @@ select.form-control:not([size]):not([multiple])
 }
 @media (max-width:600px)
 {
+	.topPro
+	{
+		height: 120px;
+	}
 	.categoryMenu
 	{
 		outline-style: none;
@@ -367,11 +376,52 @@ select.form-control:not([size]):not([multiple])
 	}
 	.filterContainer
 	{
-		top: 200%;
+		top: 180%;
 	}
 	.reset
 	{
 		padding-bottom: 15px;
 		font-size: 0.6rem;
+	}
+	.selectedCategoryNumber
+	{
+		font-size: 0.8rem;
+	}
+	.categoryMenu
+	{
+		padding: 5px 10px;
+	}
+	.filterTag_small_screen
+	{
+		padding:8px 10px;
+	}
+}
+@media (max-width:400px)
+{
+	.logo
+	{
+		height: 24px;
+	}
+	.topIcon
+	{
+		width: 22px;
+		margin-left: 14px;
+	}
+	.sortContainer
+	{
+		border-left: 1px solid var(--border-color);
+		padding-left: 5px;
+	}
+	.filterTag_small_screen
+	{
+		padding:6px 10px;
+	}
+	.selectedCategoryNumber
+	{
+		font-size: 0.6rem;
+	}
+	.categoryMenu
+	{
+		padding: 5px 10px;
 	}
 }

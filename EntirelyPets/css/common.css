@@ -64,18 +64,14 @@ select:focus
 {
 	max-width: 760px;
 }
-/*input
-{
-	outline: none;
-}
-button:focus
-{
-	outline:none;
+
+/*select {
+	-webkit-appearance:none;
 }*/
 @media (max-width:500px)
 {
 	.container
 	{
-		width: 90%;
+		width: 85%;
 	}
 }
